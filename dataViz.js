@@ -17,6 +17,11 @@ var selectedFeatureMap = {
   'active': 'Total number of people who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
 };
 
+var languageFeatureMap = {
+  'english': 'English Bulletin',
+  'malayalam': 'Malayalam Bulletin',
+};
+
 var graphFeatureMap = {
   'active': 'People with COVID-19',
   'hospitalized_today': 'People hospitalized today',
@@ -33,6 +38,7 @@ var svg = d3.select('#graph')
   .classed('svg-content-responsive', true)
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
 
 d3.json('./data/' + dataIndex.pivot.file).then(function(pivotData) {
   var parsedData = {};
