@@ -463,6 +463,7 @@ dateSelect.property('value', selected_date);
 
 featureSelect.on('change', featureChangeListener);
 dateSelect.on('change', dateChangeListener);
+
 // listener for feature change
 function featureChangeListener() {
   if (this.selectedOptions.length > 0) {
@@ -471,6 +472,24 @@ function featureChangeListener() {
     updateAll();
   }
 }
+
+// set default for languageSelect and dateSelect
+var languageSelect = d3.select('#languageSelect')
+languageSelect.property('value', selected_language);
+dateSelect.property('value', selected_date);
+
+languageSelect.on('change', languageChangeListener);
+dateSelect.on('change', dateChangeListener);
+
+// listener for language change
+function languageChangeListener() {
+  if (this.selectedOptions.length > 0) {
+    var selOpt = this.selectedOptions[0].value;
+    selected_language = selOpt;
+    updateAll();
+  }
+}
+
 // listener for date change
 
 function dateChangeListener() {
