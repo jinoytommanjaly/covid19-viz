@@ -331,7 +331,7 @@ function infobarUpdate() {
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
       '</b></p> <p class="subtitle is-6">Total number of Samples sent for testing : <b>' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</b></p> <p class="subtitle is-6">Total number of Samples tested negative : <b>' +
+      '</b></p> <p class="subtitle is-6">Total number of Samples tested negative : <b style="color:Red;">' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
       '</b></p>')
   }
