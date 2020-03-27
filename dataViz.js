@@ -327,11 +327,11 @@ function infobarUpdate() {
   if (selected_date !== undefined) {
     infobar.html('<p class="subtitle is-5">People with COVID-19 in Kerala: <b>' +
       dataIndex.daily_bulletin[selected_date]['total_active'] +
-      '</b></p>' '<p class="subtitle is-5">Total number of People with COVID-19 in Kerala : <b>' +
+      '</b></p> <p class="subtitle is-5">Total number of People with COVID-19 in Kerala : <b>' +
       dataIndex.daily_bulletin[selected_date]['total_positve'] +
-      '</b></p>' '<p class="subtitle is-5">Total number of Samples sent to testing : <b>' +
+      '</b></p> <p class="subtitle is-5">Total number of Samples sent to testing : <b>' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</b></p>' '<p class="subtitle is-5">Total number of Samples tested negative : <b>' +
+      '</b></p> <p class="subtitle is-5">Total number of Samples tested negative : <b>' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
       '</b></p>')
   }
