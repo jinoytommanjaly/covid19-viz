@@ -14,7 +14,8 @@ var selectedFeatureMap = {
   'total_hospitalized': 'Total number of symptomatic people hospitalized.<br/><small>മൊത്തം ആശുപത്രിയിൽ പ്രവേശിപ്പിച്ചവർ.</small>',
   'isolation': 'Total number of people under isolation.<br/><small>മൊത്തം മാറ്റിപ്പാർപ്പിച്ചവർ.</small>',
   'observation': 'Total number of people under observation.<br/><small>മൊത്തം നിരീക്ഷണത്തിൽ ഉള്ളവർ.</small>',
-  'active': 'Total number of people who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
+  'active': 'Total active cases who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
+  'total_cases': 'Total confirmed cases who have/had COVID-19.<br/><small>COVID-19 മൊത്തം സ്ഥിരീകരിച്ച കേസുകൾ.</small>',
 };
 
 var languageFeatureMap = {
@@ -28,6 +29,7 @@ var graphFeatureMap = {
   'total_hospitalized': 'Total people hospitalized',
   'isolation': 'People under isolation',
   'observation': 'People under observation',
+  'total_cases': 'Total confirmed cases',
 }
 
 var svg = d3.select('#graph')
@@ -51,6 +53,7 @@ d3.json('./data/' + dataIndex.pivot.file).then(function(pivotData) {
       item.total_hospitalized = parseInt(item.total_hospitalized);
       item.hospitalized_today = parseInt(item.hospitalized_today);
       item.active = parseInt(item.active);
+      item.total_cases = parseInt(item.total_cases);
       return item;
     });
     parsedData[districtName] = parsedDistrictData;
