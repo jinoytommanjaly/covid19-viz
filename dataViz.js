@@ -331,16 +331,16 @@ legend.update = function() {
 function infobarUpdate() {
   var infobar = d3.select('#infobar');
   if (selected_date !== undefined) {
-    infobar.html('<div class="Level fadeInUp" style="animation-delay: 0.8s;">
-      <div class="level-item is-red"><h5>Active cases</h5><h3>' +
-      dataIndex.daily_bulletin[selected_date]['total_active'] + '</h3></div>
-      <div class="level-item is-blue"><h5 class="heading">Confirmed cases</h5><h3>' +
-      dataIndex.daily_bulletin[selected_date]['total_positive'] + '</h3></div>
-     <div class="level-item is-cherry"><h5 class="heading">Samples sent</h5><h3>' +
-      dataIndex.daily_bulletin[selected_date]['sample_sent'] + '</h3></div>
-      <div class="level-item is-green"><h5 class="heading">Samples negative</h5><h3>' +
-      dataIndex.daily_bulletin[selected_date]['sample_negative'] + '</h3></div>
-     </div>')
+    infobar.html('
+      <b class="level-item is-red"><h5>Active cases</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['total_active'] + '</h3></b>
+      <b class="level-item is-blue"><h5 class="heading">Confirmed cases</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['total_positive'] + '</h3></b>
+     <b class="level-item is-cherry"><h5 class="heading">Samples sent</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['sample_sent'] + '</h3></b>
+      <b class="level-item is-green"><h5 class="heading">Samples negative</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['sample_negative'] + '</h3></b>
+     ')
   }
 }
 
