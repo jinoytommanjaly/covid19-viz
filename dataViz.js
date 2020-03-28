@@ -171,7 +171,7 @@ d3.json('./data/' + dataIndex.pivot.file).then(function(pivotData) {
       })
       .attr('r', 8)
       .attr('stroke', '#000')
-      .attr('stroke-width', 3)
+      .attr('stroke-width', 2)
       .attr('fill', '#feb24c')
       .on('click', tooltipClick)
   }
@@ -338,11 +338,11 @@ function infobarUpdate() {
       dataIndex.daily_bulletin[selected_date]['total_active'] +
       '</b></p> <p class="subtitle is-5" style="color:Teal;">Confirmed cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
-      '</p> <p class="subtitle is-5" style="color:Grey;">Deceased: ' +
+      '</p> <p class="subtitle is-6" style="color:Grey;">Deceased: ' +
       dataIndex.daily_bulletin[selected_date]['deceased'] +
-      '</p> <p class="subtitle is-5" style="color:Tomato;">Samples taken: ' +
+      '</p> <p class="subtitle is-6" style="color:Tomato;">Samples taken: ' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</p> <p class="subtitle is-5" style="color:Green;">Samples negative: ' +
+      '</p> <p class="subtitle is-6" style="color:Green;">Samples negative: ' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
       '</p>')
   }
