@@ -331,15 +331,16 @@ legend.update = function() {
 function infobarUpdate() {
   var infobar = d3.select('#infobar');
   if (selected_date !== undefined) {
-    infobar.html('<p class="subtitle is-5">Active cases with COVID-19 in Kerala: <b style="color:Red;">' +
-      dataIndex.daily_bulletin[selected_date]['total_active'] +
-      '</b></p> <p class="subtitle is-6">Total number of cases reported in Kerala : <b>' +
-      dataIndex.daily_bulletin[selected_date]['total_positive'] +
-      '</b></p> <p class="subtitle is-6">Total number of Samples sent for testing : <b>' +
-      dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</b></p> <p class="subtitle is-6">Total number of Samples tested negative : <b style="color:Green;">' +
-      dataIndex.daily_bulletin[selected_date]['sample_negative'] +
-      '</b></p>')
+    infobar.html('<div class="Level fadeInUp" style="animation-delay: 0.8s;">
+      <div class="level-item is-red"><h5>Active cases</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['total_active'] + '</h3></div>
+      <div class="level-item is-blue"><h5 class="heading">Confirmed cases</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['total_positive'] + '</h3></div>
+     <div class="level-item is-cherry"><h5 class="heading">Samples sent</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['sample_sent'] + '</h3></div>
+      <div class="level-item is-green"><h5 class="heading">Samples negative</h5><h3>' +
+      dataIndex.daily_bulletin[selected_date]['sample_negative'] + '</h3></div>
+     </div>')
   }
 }
 
