@@ -336,15 +336,15 @@ function infobarUpdate() {
   if (selected_date !== undefined) {
     infobar.html('<p class="subtitle is-4" style="color:Crimson;"><b>Active cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_active'] +
-      '</b></p> <b class="subtitle is-5" style="color:Teal;">Confirmed cases: ' +
+      '</b></p> <p class="subtitle is-5" style="color:Teal;">Confirmed cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
-      '</b><br/> <b class="subtitle is-5" style="color:Grey;">Deceased: ' +
+      '</p> <p class="subtitle is-5" style="color:Grey;">Deceased: ' +
       dataIndex.daily_bulletin[selected_date]['deceased'] +
-      '</b><br/> <b class="subtitle is-5" style="color:Tomato;">Samples taken: ' +
+      '</p> <p class="subtitle is-5" style="color:Tomato;">Samples taken: ' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</b><br/> <b class="subtitle is-5" style="color:Green;">Samples negative: ' +
+      '</p> <p class="subtitle is-5" style="color:Green;">Samples negative: ' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
-      '</b>')
+      '</p>')
   }
 }
 
