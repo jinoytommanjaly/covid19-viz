@@ -14,7 +14,8 @@ var selectedFeatureMap = {
   'total_hospitalized': 'Total number of symptomatic people hospitalized.<br/><small>മൊത്തം ആശുപത്രിയിൽ പ്രവേശിപ്പിച്ചവർ.</small>',
   'isolation': 'Total number of people under isolation.<br/><small>മൊത്തം മാറ്റിപ്പാർപ്പിച്ചവർ.</small>',
   'observation': 'Total number of people under observation.<br/><small>മൊത്തം നിരീക്ഷണത്തിൽ ഉള്ളവർ.</small>',
-  'active': 'Total number of people who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
+  'active': 'Total active cases who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
+  'total_cases': 'Total confirmed cases who have/had COVID-19.<br/><small>COVID-19 മൊത്തം സ്ഥിരീകരിച്ച കേസുകൾ.</small>',
 };
 
 var languageFeatureMap = {
@@ -28,6 +29,7 @@ var graphFeatureMap = {
   'total_hospitalized': 'Total people hospitalized',
   'isolation': 'People under isolation',
   'observation': 'People under observation',
+  'total_cases': 'Total confirmed cases',
 }
 
 var svg = d3.select('#graph')
@@ -51,6 +53,7 @@ d3.json('./data/' + dataIndex.pivot.file).then(function(pivotData) {
       item.total_hospitalized = parseInt(item.total_hospitalized);
       item.hospitalized_today = parseInt(item.hospitalized_today);
       item.active = parseInt(item.active);
+      item.total_cases = parseInt(item.total_cases);
       return item;
     });
     parsedData[districtName] = parsedDistrictData;
@@ -331,15 +334,15 @@ legend.update = function() {
 function infobarUpdate() {
   var infobar = d3.select('#infobar');
   if (selected_date !== undefined) {
-    infobar.html('<b class="subtitle is-4" style="color:Crimson;">Active cases: ' +
+    infobar.html('<p class="subtitle is-4" style="color:Crimson;"><b>Active cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_active'] +
-      '</b><br/> <b class="subtitle is-6" style="color:Teal;">Confirmed cases: ' +
+      '</b></p> <b class="subtitle is-5" style="color:Teal;">Confirmed cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
-      '</b> <b class="subtitle is-6" style="color:Grey;">Deceased: ' +
+      '</b><br/> <b class="subtitle is-5" style="color:Grey;">Deceased: ' +
       dataIndex.daily_bulletin[selected_date]['deceased'] +
-      '</b><br/> <b class="subtitle is-6" style="color:Tomato;">Samples taken: ' +
+      '</b><br/> <b class="subtitle is-5" style="color:Tomato;">Samples taken: ' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</b> <b class="subtitle is-6" style="color:Green;">Samples negative: ' +
+      '</b><br/> <b class="subtitle is-5" style="color:Green;">Samples negative: ' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
       '</b>')
   }
