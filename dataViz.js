@@ -334,17 +334,18 @@ legend.update = function() {
 function infobarUpdate() {
   var infobar = d3.select('#infobar');
   if (selected_date !== undefined) {
-    infobar.html('<p class="subtitle is-4" style="color:Crimson;"><b>Active cases: ' +
+    infobar.html('<b class="subtitle is-4" style="color:Crimson;"><b>Active cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_active'] +
-      '</b></p> <p class="subtitle is-5" style="color:Teal;">Confirmed cases: ' +
+      '<sup>[+' + dataIndex.daily_bulletin[selected_date]['active_delta'] +
+      ]'</sup></b></b></br> <b class="subtitle is-5" style="color:Teal;"><b>Confirmed cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
-      '</p> <p class="subtitle is-6" style="color:Grey;">Deceased: ' +
+      '</b></b></br> <b class="subtitle is-5" style="color:Grey;"><b>Deceased: ' +
       dataIndex.daily_bulletin[selected_date]['deceased'] +
-      '</p> <p class="subtitle is-6" style="color:Tomato;">Samples taken: ' +
+      '</b></b></br> <b class="subtitle is-5" style="color:Tomato;"><b>Samples taken: ' +
       dataIndex.daily_bulletin[selected_date]['sample_sent'] +
-      '</p> <p class="subtitle is-6" style="color:Green;">Samples negative: ' +
+      '</b></b></br> <p class="subtitle is-5" style="color:Green;"><b>Samples negative: ' +
       dataIndex.daily_bulletin[selected_date]['sample_negative'] +
-      '</p>')
+      '</b></b>')
   }
 }
 
