@@ -14,6 +14,9 @@
 	<link rel="manifest" href="./favicon/site.webmanifest">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162069349-1"></script>
 	<script>
@@ -98,6 +101,10 @@
 		.section.top {
 			padding-bottom: 1rem !important;
 		}
+		
+		.section.notice {
+			padding-bottom: 1rem !important;
+		}
 
 		.section.extra {
 			padding-top: 1rem !important;
@@ -156,11 +163,13 @@
 </head>
 
 <body>
+	<section class="section notice">
 	<div class="container">
-		<div class="alert alert-warning alert-dismissible fade show" role="alert" style="">
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			  <span aria-hidden="true">×</span></button><strong>Kerala Startup Mission!</strong>&nbsp;Register for Fight against Corona.&nbsp;<a href="https://breakcorona.in" class="d-inline-block" style=""><span autocomplete="off">breakcorona.in</span></a>		</div>
-	 </div>
+  		<div class="alert alert-info alert-dismissible">
+    			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    				<strong>Info!</strong> Kerala Startup Mission! Register for Fight against Corona.<a href="https://breakcorona.in" class="d-inline-block" style="">.
+  		</div>
+	</div>
 
 	<section class="section top">
 		<div class="container">
