@@ -337,7 +337,7 @@ function infobarUpdate() {
     infobar.html('<b class="subtitle is-4" style="color:Crimson;"><b>Active cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_active'] +
       '</b><sup> ' +
-      dataIndex.daily_bulletin[selected_date]['total_active'] +
+      dataIndex.daily_bulletin[selected_date]['cases_delta'] +
       '</sup></b></br> <b class="subtitle is-5" style="color:Teal;"><b>Confirmed cases: ' +
       dataIndex.daily_bulletin[selected_date]['total_positive'] +
       '</b></b></br> <b class="subtitle is-5" style="color:Grey;"><b>Deceased: ' +
