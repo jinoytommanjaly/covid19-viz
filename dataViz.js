@@ -432,7 +432,7 @@ function style(feature) {
     opacity: 1,
     color: 'white',
     dashArray: '3',
-    fillOpacity: 0.6
+    fillOpacity: 0.7
   };
 }
 
@@ -454,6 +454,10 @@ function resetHighlight(e) {
     fillOpacity: 0.7
   });
   info.update();
+}
+
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
 }
 
 function resetAll() {
