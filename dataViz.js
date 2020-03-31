@@ -314,7 +314,7 @@ legend.update = function() {
     });
   }
   if (rmax === 0) {
-    rmax = 100;
+    rmax = 0;
   }
   for (var i = rmin; i <= rmax; i += Math.ceil((rmax - rmin) / 5)) {
     intervals.push(i);
