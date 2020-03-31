@@ -313,8 +313,8 @@ legend.update = function() {
       return parseInt(item[selected_feature])
     });
   }
-  if (rmax === 0) {
-    rmax = 0;
+  if (rmin === 0) {
+    rmin = 1;
   }
   for (var i = rmin; i <= rmax; i += Math.ceil((rmax - rmin) / 5)) {
     intervals.push(i);
@@ -352,7 +352,7 @@ function highlightFeature(e) {
     weight: 5,
     color: '#666',
     dashArray: '',
-    fillOpacity: 0.7
+    fillOpacity: 0.9
   });
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -427,7 +427,7 @@ function style(feature) {
     opacity: 1,
     color: 'white',
     dashArray: '3',
-    fillOpacity: 0.7
+    fillOpacity: 0.9
   };
 }
 
@@ -446,7 +446,7 @@ function resetHighlight(e) {
     opacity: 1,
     color: 'white',
     dashArray: '3',
-    fillOpacity: 0.7
+    fillOpacity: 0.9
   });
   info.update();
 }
