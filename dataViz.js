@@ -234,9 +234,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   zoomOffset: -1
 }).addTo(map);
 
-// disable map zoom when using scroll
-map.scrollZoom.disable();
-
 // helper to get latest date from array
 function getLatestDate(dateArr) {
   var dd, mm, yyyy, spl, newd;
