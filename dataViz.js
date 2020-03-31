@@ -225,15 +225,6 @@ var colorfunc = function(d) {
   return col_range[0]
 }
 
-// tile base layer from mapbox to give context
-var mapbox_token = 'pk.eyJ1IjoiZ3VsYW4yOCIsImEiOiJjazd2cGp5OGgwd21kM2xwMHV6ZjA3ZXNvIn0.1OeMxwjB5QV-2DgEhStX9w';
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapbox_token, {
-  maxZoom: 18,
-  id: 'jinoytommanjaly/ck8fpxbze2sym1invnnb4rw0f',
-  tileSize: 512,
-  zoomOffset: -1
-}).addTo(map);
-
 // helper to get latest date from array
 function getLatestDate(dateArr) {
   var dd, mm, yyyy, spl, newd;
