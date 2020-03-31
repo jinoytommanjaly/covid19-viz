@@ -229,7 +229,7 @@ var colorfunc = function(d) {
 var mapbox_token = 'pk.eyJ1IjoiZ3VsYW4yOCIsImEiOiJjazd2cGp5OGgwd21kM2xwMHV6ZjA3ZXNvIn0.1OeMxwjB5QV-2DgEhStX9w';
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapbox_token, {
   maxZoom: 18,
-  id: 'gulan28/ck7vplv1i0tl91iqlb4oz6ofy',
+  id: 'jinoytommanjaly/ck8fpxbze2sym1invnnb4rw0f',
   tileSize: 512,
   zoomOffset: -1
 }).addTo(map);
