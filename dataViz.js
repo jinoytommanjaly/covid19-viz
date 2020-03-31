@@ -313,8 +313,8 @@ legend.update = function() {
       return parseInt(item[selected_feature])
     });
   }
-  if (rmin === 0) {
-    rmin = 1;
+  if (rmax === 0) {
+    rmax = 1;
   }
   for (var i = rmin; i <= rmax; i += Math.ceil((rmax - rmin) / 5)) {
     intervals.push(i);
