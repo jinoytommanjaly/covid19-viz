@@ -222,7 +222,7 @@ var map = L.map('map', {
     zoomControl: false,
     dragging: false,
     doubleClickZoom: false
-}).setView([10.42, 76.47], 6.6);
+}).setView([10.42, 76.53], 6.6);
 var lat, lng;
 var col_range = ['#ffeda0', '#f03b20'];
 var colorfunc = function(d) {
