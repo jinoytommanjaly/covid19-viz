@@ -30,6 +30,7 @@ var graphFeatureMap = {
   'isolation': 'People under isolation',
   'observation': 'People under observation',
   'total_cases': 'Total confirmed cases',
+  'recovered': 'Total peoples recovered',
 }
 
 var svg = d3.select('#graph')
