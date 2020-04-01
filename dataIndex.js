@@ -1,5 +1,9 @@
 var dataIndex = {
   daily_bulletin: {
+    '26-2-2020': {file: 'data_26_2_2020.csv', sample_sent: 460, sample_negative: 451, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
+    '27-2-2020': {file: 'data_27_2_2020.csv', sample_sent: 462, sample_negative: 451, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
+    '28-2-2020': {file: 'data_28_2_2020.csv', sample_sent: 471, sample_negative: 463, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
+    '29-2-2020': {file: 'data_29_2_2020.csv', sample_sent: 485, sample_negative: 471, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
     '1-3-2020': {file: 'data_1_3_2020.csv', sample_sent: 488, sample_negative: 471, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
     '2-3-2020': {file: 'data_2_3_2020.csv', sample_sent: 504, sample_negative: 493, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
     '3-3-2020': {file: 'data_3_3_2020.csv', sample_sent: 520, sample_negative: 494, total_active: 0, total_positive: 3, cases_delta: "(0)", deceased: 0},
