@@ -16,6 +16,7 @@ var selectedFeatureMap = {
   'observation': 'Total number of people under observation.<br/><small>മൊത്തം നിരീക്ഷണത്തിൽ ഉള്ളവർ.</small>',
   'active': 'Total active cases who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
   'recovered': 'Total people who have recovered from COVID-19.<br/><small>COVID-19 രോഗം പൂർണമായി മാറിയവർ.</small>',
+  'cases_delta': 'Total number of new positive cases reported.<br/><small>COVID-19 പുതിയ പോസിറ്റീവ് കേസുകളുടെ എണ്ണം.</small>',
   'total_cases': 'Total confirmed cases who have/had COVID-19.<br/><small>COVID-19 മൊത്തം സ്ഥിരീകരിച്ച കേസുകൾ.</small>',
 };
 
