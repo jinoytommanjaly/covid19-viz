@@ -15,12 +15,8 @@ var selectedFeatureMap = {
   'isolation': 'Total number of people under isolation.<br/><small>മൊത്തം മാറ്റിപ്പാർപ്പിച്ചവർ.</small>',
   'observation': 'Total number of people under observation.<br/><small>മൊത്തം നിരീക്ഷണത്തിൽ ഉള്ളവർ.</small>',
   'active': 'Total active cases who have COVID-19.<br/><small>COVID-19 ബാധിച്ചു ശുശ്രുഷയിൽ ഉള്ളവർ.</small>',
+  'recovered': 'Total people who have recovered from COVID-19.<br/><small>COVID-19 രോഗം പൂർണമായി മാറിയവർ.</small>',
   'total_cases': 'Total confirmed cases who have/had COVID-19.<br/><small>COVID-19 മൊത്തം സ്ഥിരീകരിച്ച കേസുകൾ.</small>',
-};
-
-var languageFeatureMap = {
-  'english': 'English Bulletin',
-  'malayalam': 'Malayalam Bulletin',
 };
 
 var graphFeatureMap = {
