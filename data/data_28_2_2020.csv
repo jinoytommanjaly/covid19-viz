@@ -1,4 +1,4 @@
-district,observation,isolation,total_hospitalized,hospitalized_today,active,recovered,deceased,total_cases,cases_delta
+district,observation,isolation,total_hospitalized,home_discharged_today,active,recovered,deceased,total_cases,cases_delta
 Thiruvananthapuram,26,26,0,0,0,0,0,0,0
 Kollam,7,5,2,0,0,0,0,0,0
 Pathanamthitta,2,2,0,0,0,0,0,0,0
