@@ -1,0 +1,16 @@
+district,observation,isolation,total_hospitalized,home_discharged_today,active,recovered,deceased,total_cases,cases_delta
+Thiruvananthapuram,227,224,3,193,0,0,0,0,0
+Kollam,20,20,0,137,0,0,0,0,0
+Pathanamthitta,2,2,0,36,0,0,0,0,0
+Idukki,2,2,0,22,0,0,0,0,0
+Kottayam,71,71,0,10,0,0,0,0,0
+Alappuzha,40,39,1,141,0,1,0,1,0
+Ernakulam,111,110,1,227,0,0,0,0,0
+Thrissur,169,169,0,7,0,1,0,1,0
+Palakkad,11,11,0,94,0,0,0,0,0
+Malappuram,245,244,1,7,0,0,0,0,0
+Kozhikode,5,4,1,189,0,0,0,0,0
+Wayanad,0,0,0,56,0,0,0,0,0
+Kannur,7,7,0,181,0,0,0,0,0
+Kasaragod,4,4,0,49,0,1,0,1,0
+Total,914,907,7,1349,0,3,0,3,0
